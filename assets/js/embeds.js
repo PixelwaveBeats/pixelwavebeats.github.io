@@ -9,7 +9,7 @@ async function fetchVideos() {
 
   do {
     randomVideoIndex = randomIndex(data.embeds.videos);
-  } while (randomVideoIndex === 0 || previousVideoIDs.includes(randomVideoIndex));
+  } while (previousVideoIDs.includes(randomVideoIndex));
 
   if (previousVideoIDs.length >= Math.round(data.embeds.videos.length / 2)) {
     previousVideoIDs = previousVideoIDs.slice(1, previousVideoIDs.length);
@@ -46,7 +46,7 @@ const options = {
   ],
   muted: true,
 };
-let previousVideoIDs = [1];
+let previousVideoIDs = [0];
 
 reloadButton.addEventListener('click', fetchVideos);
 
