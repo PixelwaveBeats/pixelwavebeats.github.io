@@ -5,9 +5,9 @@ var options = {
   parent: [
     "pixelwavebeats.github.io",
   ],
+  muted: true,
 };
 
 var player = new Twitch.Player("twitch-player", options);
 
 player.setVolume(0.5);
-player.muted = true;
