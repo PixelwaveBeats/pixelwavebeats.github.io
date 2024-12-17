@@ -1,0 +1,84 @@
+{
+  "config": {
+    "height": "540px",
+    "width": "100%",
+    "playlist": "https://www.youtube.com/embed/?listType=playlist&amp;list=",
+    "video": "https://www.youtube.com/embed/"
+  },
+  "embeds": {
+    "playlists": [
+      {
+        "title": "Pokémon RBY but its Lofi Playlist",
+        "src": "PLGwSa-hPjHeDo7-WzKqMHpDwB7Qd4fdJx&amp;autoplay=",
+        "autoplay": "0"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Rival Appears but its Lofi",
+        "src": "yMzwGwFF5vM",
+        "autoplay": "0"
+      },
+      {
+        "title": "Pallet Town Theme but its Lofi",
+        "src": "tlpSC9YH2Ns",
+        "autoplay": "0"
+      },
+      {
+        "title": "Prof. Oak Theme but its Lofi",
+        "src": "wUWjs0uebEM",
+        "autoplay": "0"
+      },
+      {
+        "title": "Viridian Forest Theme but its Lofi",
+        "src": "wEaNq-RlSvY",
+        "autoplay": "0"
+      },
+      {
+        "title": "Oak Research Lab but its Lo-fi",
+        "src": "P0hhCreBluw",
+        "autoplay": "0"
+      },
+      {
+        "title": "Route 1 Theme but its Lofi",
+        "src": "Y6ozHQ99lcY",
+        "autoplay": "0"
+      },
+      {
+        "title": "Wild Pokémon Battle but its Lofi",
+        "src": "Jiq3jsXwefA",
+        "autoplay": "0"
+      },
+      {
+        "title": "Wild Pokémon Victory but its Lofi",
+        "src": "gDY178OlPgg",
+        "autoplay": "0"
+      },
+      {
+        "title": "Pewter City Theme but its Lofi",
+        "src": "a8msdyBk1sI",
+        "autoplay": "0"
+      },
+      {
+        "title": "Pokémon Gym Theme but its Lofi",
+        "src": "zOEAMsZiEtc",
+        "autoplay": "0"
+      },
+      {
+        "title": "Pokémon Center Theme but its Lofi",
+        "src": "6azwfnqsuzI",
+        "autoplay": "0"
+      },
+      {
+        "title": "Trainer Appears Theme but its Lofi",
+        "src": "MpfL7WYQk5M",
+        "autoplay": "0"
+      },
+      {
+        "title": "Trainer Battle Victory but its Lofi",
+        "src": "FQJtsExJ7bE",
+        "autoplay": "0"
+      }
+    ]
+  }
+}
