@@ -86,3 +86,11 @@ a.icon img {
 .text-light-pink {
   color: #ff97e5 !important;
 }
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
