@@ -11,16 +11,12 @@ async function fetchVideos() {
     randomVideoIndex = randomIndex(data.embeds.videos);
   } while (randomVideoIndex === 0 || previousVideoIDs.includes(randomVideoIndex));
 
-  console.log(previousVideoIDs.length, Math.round(data.embeds.videos.length / 2))
-
   if (previousVideoIDs.length >= Math.round(data.embeds.videos.length / 2)) {
     previousVideoIDs = previousVideoIDs.slice(1, previousVideoIDs.length);
   } 
     
   previousVideoIDs.push(randomVideoIndex);
   const selectedVideo = data.embeds.videos[randomVideoIndex];
-
-  console.log(previousVideoIDs)
 
   videoTitle.innerHTML = selectedVideo.title;
   videoEmbed.src = data.config.video + selectedVideo.src + data.config.autoplay + selectedVideo.autoplay;
