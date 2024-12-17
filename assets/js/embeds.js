@@ -46,7 +46,7 @@ const options = {
   ],
   muted: true,
 };
-let previousVideoIDs = [];
+let previousVideoIDs = [1];
 
 reloadButton.addEventListener('click', fetchVideos);
 
