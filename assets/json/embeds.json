@@ -3,13 +3,14 @@
     "height": "540px",
     "width": "100%",
     "playlist": "https://www.youtube.com/embed/?listType=playlist&amp;list=",
-    "video": "https://www.youtube.com/embed/"
+    "video": "https://www.youtube.com/embed/",
+    "autoplay": "?&amp;autoplay="
   },
   "embeds": {
     "playlists": [
       {
         "title": "Pokémon RBY but its Lofi Playlist",
-        "src": "PLGwSa-hPjHeDo7-WzKqMHpDwB7Qd4fdJx&amp;autoplay=",
+        "src": "PLGwSa-hPjHeDo7-WzKqMHpDwB7Qd4fdJx",
         "autoplay": "0"
       }
     ],
