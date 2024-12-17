@@ -9,6 +9,7 @@
   "embeds": {
     "playlists": [
       {
+        "id": 0,
         "title": "Pokémon RBY Lofi Playlist",
         "src": "PLGwSa-hPjHeDo7-WzKqMHpDwB7Qd4fdJx",
         "autoplay": "0"

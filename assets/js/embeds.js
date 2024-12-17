@@ -1,4 +1,47 @@
-var options = {
+function randomIndex(arr) {
+  return Math.floor(Math.random() * arr.length);
+}
+
+async function fetchVideos() {
+  const response = await fetch('https://pixelwavebeats.github.io/assets/json/embeds.json');
+  const data = await response.json();
+  let randomVideoIndex;
+
+  do {
+    randomVideoIndex = randomIndex(data.embeds.videos);
+  } while (randomVideoIndex === 0 || previousVideoIDs.includes(randomVideoIndex));
+
+  console.log(previousVideoIDs.length, Math.round(data.embeds.videos.length / 2))
+
+  if (previousVideoIDs.length >= Math.round(data.embeds.videos.length / 2)) {
+    previousVideoIDs = previousVideoIDs.slice(1, previousVideoIDs.length);
+  } 
+    
+  previousVideoIDs.push(randomVideoIndex);
+  const selectedVideo = data.embeds.videos[randomVideoIndex];
+
+  console.log(previousVideoIDs)
+
+  videoTitle.innerHTML = selectedVideo.title;
+  videoEmbed.src = data.config.video + selectedVideo.src + data.config.autoplay + selectedVideo.autoplay;
+}
+
+async function fetchPlaylists() {
+  const response = await fetch('https://pixelwavebeats.github.io/assets/json/embeds.json');
+  const data = await response.json();
+  const randomIndex = Math.floor(Math.random() * 0);
+  const selectedPlaylist = data.embeds.playlists[randomIndex];
+
+  playlistTitle.innerHTML = selectedPlaylist.title;
+  playlistEmbed.src = data.config.playlist + selectedPlaylist.src;
+}
+
+const videoTitle = document.querySelector('#videoTitle');
+const videoEmbed = document.querySelector('#video');
+const playlistEmbed = document.querySelector('#playlist');
+const playlistTitle = document.querySelector('#playlistTitle');
+const reloadButton = document.querySelector('#reloadButton');
+const options = {
   width: '100%',
   height: 540,
   channel: "pixelwavebeats",
@@ -7,17 +50,11 @@ var options = {
   ],
   muted: true,
 };
+let previousVideoIDs = [];
+
+reloadButton.addEventListener('click', fetchVideos);
 
 var player = new Twitch.Player("twitch-player", options);
 
-player.setVolume(0.5);
-
-fetch('../json/embeds.json')
-  .then(response => response.json())
-  .then(data => {
-    const videos = data.videos;
-    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-    
-    console.log(randomVideo);
-  })
-  .catch(error => console.error('Error fetching the embeds.json file:', error));
+fetchVideos();
+fetchPlaylists();
