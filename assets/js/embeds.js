@@ -32,11 +32,6 @@ async function fetchPlaylists() {
   playlistEmbed.src = data.config.playlist + selectedPlaylist.src;
 }
 
-const videoTitle = document.querySelector('#videoTitle');
-const videoEmbed = document.querySelector('#video');
-const playlistEmbed = document.querySelector('#playlist');
-const playlistTitle = document.querySelector('#playlistTitle');
-const reloadButton = document.querySelector('#reloadButton');
 const options = {
   width: '100%',
   height: 540,
@@ -46,11 +41,22 @@ const options = {
   ],
   muted: true,
 };
+const player = new Twitch.Player("twitch-player", options);
+const youtubeLivePlayer = document.querySelector('#youtubeLiveEmbed');
+const videoTitle = document.querySelector('#videoTitle');
+const videoEmbed = document.querySelector('#video');
+const playlistEmbed = document.querySelector('#playlist');
+const playlistTitle = document.querySelector('#playlistTitle');
+const reloadButton = document.querySelector('#reloadButton');
+const youtubeLiveBtn = document.querySelector('#hideShowYoutube');
+const twitchLiveBtn = document.querySelector('#hideShowTwitch');
+const youtubeLive = document.querySelector('#youtubeLive');
+const twitchLive = document.querySelector('#twitchLive');
 let previousVideoIDs = [0];
-
-reloadButton.addEventListener('click', fetchVideos);
-
-var player = new Twitch.Player("twitch-player", options);
 
 fetchVideos();
 fetchPlaylists();
+
+reloadButton.addEventListener('click', fetchVideos);
+youtubeLiveBtn.addEventListener('click', hideYoutube);
+twitchLiveBtn.addEventListener('click', hideTwitch);

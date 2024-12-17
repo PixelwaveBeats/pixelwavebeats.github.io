@@ -33,6 +33,9 @@ h5,
 h6 {
   color: #fffb00 !important;
   font-weight: 700;
+}
+
+h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -103,6 +106,8 @@ a.icon img {
   width: 65% !important;
 }
 
-#reloadButton {
+#reloadButton,
+#hideShowYoutube,
+#hideShowTwitch {
   cursor: pointer;
 }

@@ -80,20 +80,21 @@
       </p>
     </section>
 
-    <section class="container">
+    <section id="youtubeLive" class="container">
       <h2 class="text-center mt-3">
-        Pixelwave Beats Livestreams on
+        Livestreams on
         <span class="text-light-pink">YouTUBE</span>
         &
         <span class="text-light-purple">Twitch</span>
       </h2>
+
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-12">
           <iframe
-            class="mt-3"
+            id="youtubeLiveEmbed"
             width="100%"
             height="540"
-            src="https://www.youtube.com/embed/yiezWJ70s7U?si=Z6bgNNuqk4fTd0jx&amp;autoplay=1"
+            src="https://www.youtube.com/embed/yiezWJ70s7U?si=Z6bgNNuqk4fTd0jx&amp;autoplay=1&amp;enablejsapi=1"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -103,20 +104,19 @@
         </div>
         <div class="col-lg-4 col-md-12">
           <iframe
-            class="mt-3"
             width="100%"
             height="540"
             src="https://www.youtube.com/live_chat?v=yiezWJ70s7U&amp;embed_domain=pixelwavebeats.github.io"
           ></iframe>
         </div>
       </div>
-      <div class="row justify-content-center">
+
+      <div class="row justify-content-center mt-3">
         <div class="col-lg-8 col-md-12">
-          <div id="twitch-player" class="mt-3"></div>
+          <div id="twitch-player"></div>
         </div>
         <div class="col-lg-4 col-md-12">
           <iframe
-            class="mt-3"
             id="twitch-chat-embed"
             src="https://www.twitch.tv/embed/pixelwavebeats/chat?parent=pixelwavebeats.github.io&amp;darkpopout"
             allow="allow-storage-access-by-user-activation; allow-scripts; allow-same-origin; allow-popups; allow-popups-to-escape-sandbox; allow-modals"
@@ -128,7 +128,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section id="twitchLive" class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 cold-md-12">
           <h2 id="videoTitle" class="text-center mt-3">Loading...</h2>
