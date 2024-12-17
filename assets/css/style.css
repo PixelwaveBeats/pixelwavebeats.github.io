@@ -47,10 +47,6 @@ iframe video {
   margin: 0 auto;
 }
 
-iframe .yt-live-chat-item-list-renderer {
-  display: none;
-}
-
 a {
   color: rgb(0, 191, 255) !important;
   text-decoration: none;
