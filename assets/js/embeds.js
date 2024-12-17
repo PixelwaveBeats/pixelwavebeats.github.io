@@ -11,7 +11,7 @@ async function fetchVideos() {
     randomVideoIndex = randomIndex(data.embeds.videos);
   } while (previousVideoIDs.includes(randomVideoIndex));
 
-  if (previousVideoIDs.length >= Math.round(data.embeds.videos.length / 1.5)) {
+  if (previousVideoIDs.length >= Math.floor(data.embeds.videos.length / 1.3)) {
     previousVideoIDs = previousVideoIDs.slice(1, previousVideoIDs.length);
   } 
     
