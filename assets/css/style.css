@@ -73,8 +73,8 @@ a.icon img {
 
 .logo {
   border-radius: 100%;
-  border: 5px rgba(0, 0, 0, 0.5);
-  border-style: solid dashed;
+  border: 2px rgba(0, 0, 0, 0.5);
+  border-style: solid;
   display: block;
   margin: 0 auto;
 }
