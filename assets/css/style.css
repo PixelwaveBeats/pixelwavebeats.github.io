@@ -110,4 +110,5 @@ a.icon img {
 #hideShowYoutube,
 #hideShowTwitch {
   cursor: pointer;
+  user-select: none;
 }

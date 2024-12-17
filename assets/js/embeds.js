@@ -3,6 +3,12 @@ function randomIndex(arr) {
 }
 
 async function fetchVideos() {
+  reloadButton.removeEventListener('click', fetchVideos);
+
+  setTimeout(() => {
+    reloadButton.addEventListener('click', fetchVideos);
+  }, 1000);
+
   const response = await fetch('https://pixelwavebeats.github.io/assets/json/embeds.json');
   const data = await response.json();
   let randomVideoIndex;
