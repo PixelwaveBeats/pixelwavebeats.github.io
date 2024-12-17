@@ -16,66 +16,79 @@
     ],
     "videos": [
       {
-        "title": "Rival Appears Lofi",
+        "id": 0,
+        "title": "Rival Appears Theme Lofi",
         "src": "yMzwGwFF5vM",
         "autoplay": "0"
       },
       {
+        "id": 1,
         "title": "Pallet Town Theme Lofi",
         "src": "tlpSC9YH2Ns",
         "autoplay": "0"
       },
       {
+        "id": 2,
         "title": "Prof. Oak Theme Lofi",
         "src": "wUWjs0uebEM",
         "autoplay": "0"
       },
       {
+        "id": 3,
         "title": "Viridian Forest Theme Lofi",
         "src": "wEaNq-RlSvY",
         "autoplay": "0"
       },
       {
+        "id": 4,
         "title": "Oak Research Lab Lofi",
         "src": "P0hhCreBluw",
         "autoplay": "0"
       },
       {
+        "id": 5,
         "title": "Route 1 Theme Lofi",
         "src": "Y6ozHQ99lcY",
         "autoplay": "0"
       },
       {
+        "id": 6,
         "title": "Wild Pokémon Battle Lofi",
         "src": "Jiq3jsXwefA",
         "autoplay": "0"
       },
       {
+        "id": 7,
         "title": "Wild Pokémon Victory Lofi",
         "src": "gDY178OlPgg",
         "autoplay": "0"
       },
       {
+        "id": 8,
         "title": "Pewter City Theme Lofi",
         "src": "a8msdyBk1sI",
         "autoplay": "0"
       },
       {
+        "id": 9,
         "title": "Pokémon Gym Theme Lofi",
         "src": "zOEAMsZiEtc",
         "autoplay": "0"
       },
       {
+        "id": 10,
         "title": "Pokémon Center Theme Lofi",
         "src": "6azwfnqsuzI",
         "autoplay": "0"
       },
       {
+        "id": 11,
         "title": "Trainer Appears Theme Lofi",
         "src": "MpfL7WYQk5M",
         "autoplay": "0"
       },
       {
+        "id": 12,
         "title": "Trainer Battle Victory Lofi",
         "src": "FQJtsExJ7bE",
         "autoplay": "0"
