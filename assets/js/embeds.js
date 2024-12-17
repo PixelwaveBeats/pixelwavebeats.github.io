@@ -9,4 +9,4 @@ var options = {
 
 var player = new Twitch.Player("twitch-player", options);
 
-player.setVolume(0.5);
+player.setVolume(0);
