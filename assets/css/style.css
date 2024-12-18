@@ -80,14 +80,27 @@ a.icon img {
   height: 100%;
 }
 
-.logo {
+.logo-border {
   border-radius: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  height: 153px;
+  width: 153px;
   background-color: #1a1a1a !important;
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(1, 1, 1, 0.4);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(1, 1, 1, 0.4);
-  box-shadow: 0px 0px 2px 2px rgba(1, 1, 1, 0.4);
+  -webkit-box-shadow: 0px 0px 2px 2px #c00;
+  -moz-box-shadow: 0px 0px 2px 2px #c00;
+  box-shadow: 0px 0px 2px 2px #c00;
+}
+
+.logo {
+  position: relative;
+  border-radius: 100%;
+  background-color: #1a1a1a !important;
+  -webkit-box-shadow: 0px 0px 2px 2px #000;
+  -moz-box-shadow: 0px 0px 2px 2px #000;
+  box-shadow: 0px 0px 2px 2px #000;
 }
 
 .text-light-purple {
