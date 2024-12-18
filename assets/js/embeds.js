@@ -45,7 +45,7 @@ const options = {
   parent: [
     "pixelwavebeats.github.io",
   ],
-  muted: true,
+  muted: false,
 };
 const player = new Twitch.Player("twitch-player", options);
 const youtubeLivePlayer = document.querySelector('#youtubeLiveEmbed');
